@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="9dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- ImageView for image -->
+        <ImageView
+            android:id="@+id/img_views"
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:elevation="5dp"
+            app:cardCornerRadius="9dp" />
+
+        <!-- LinearLayout to hold text and tick mark -->
+        <!-- LinearLayout to hold text and tick mark -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- TextView for animal name -->
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="148dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="casual"
+                android:text="Text"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- Tick mark ImageView -->
+        <ImageView
+            android:id="@+id/tick_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_tick"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp" />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
